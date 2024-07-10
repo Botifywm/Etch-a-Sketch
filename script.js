@@ -16,10 +16,10 @@ function createGrid(n=16) {
 function usrInput(){
     let userInput = document.querySelector("#gridNum");
     if(userInput.value > 100){
-        alert('Input value cannot more than 100!')
+        alert('Input value cannot be more than 100!')
     }
     else if (userInput.value < 1){
-        alert('Input value cannot more than 100!')
+        alert('Input value cannot be less than 1!')
     }
     else{
         let n = userInput.value
