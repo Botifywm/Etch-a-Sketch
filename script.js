@@ -1,5 +1,6 @@
-const btn = document.querySelector("button");
+const btn = document.querySelector(".length");
 const container = document.querySelector(".container");
+const select_col = document.querySelector("#gridCol");
 
 function createGrid(n=16) {
     let nGrid = n * n;
@@ -25,12 +26,20 @@ function usrInput(){
     userInput.value = "";
     
     createGrid(n)
-    }
+    coloring()
+}
+
+function coloring() {
+    let color = document.querySelector("#gridCol").value;
+    const grids = document.querySelectorAll(".grid");
+    grids.forEach((grid) => grid.addEventListener("mouseover", () => grid.style.backgroundColor = color));
+}
 
 createGrid()
+
 btn.addEventListener("click", usrInput)
 
+select_col.addEventListener("change", coloring)
 
-
-// let n = userInput.value;
-// let nGrid = n * n;
+// const grids = document.querySelectorAll(".grid");
+// grids.forEach((grid) => grid.addEventListener("mouseover", () => coloring(grid)));

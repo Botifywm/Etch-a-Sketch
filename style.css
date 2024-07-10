@@ -11,10 +11,7 @@ body{
     margin-top: 32px;
     display: flex;
     flex-wrap: wrap;
-    background-color: white;
 }
-
-
 
 .grid{
     box-sizing: border-box;
@@ -22,9 +19,16 @@ body{
     /* height: calc(100%/16); */
     flex-grow: 1;
     /* flex-basis: calc(100%/16); */
+    background-color: whitesmoke;
 }
 
 #userInput {
     text-align: center;
     color: white;
+}
+
+#colorInput {
+    text-align: center;
+    color: white;
+    margin-top: 16px;
 }
