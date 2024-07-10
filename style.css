@@ -1,6 +1,14 @@
 body{
     background-image: linear-gradient(#845884, rgb(61, 61, 179));
-    height: 100vh;
+}
+
+.heading{
+    text-align: center;
+    font-size: 60px;
+    font-family: fantasy;
+    color: antiquewhite;
+    margin: 4px;
+    padding: 0;
 }
 
 .container{
@@ -9,6 +17,7 @@ body{
     height: 800px;
     margin: auto;
     margin-top: 32px;
+    margin-bottom: 32px;
     display: flex;
     flex-wrap: wrap;
 }
