@@ -14,19 +14,24 @@ function createGrid(n=16) {
 }
 
 function usrInput(){
-    // remove all the grids in place of the new number of grids
-    document.querySelectorAll(".grid").forEach((elem) => elem.remove());
-
     let userInput = document.querySelector("#gridNum");
-    container.removeChild
-    console.log(userInput.value);
-    let n = userInput.value
-    let nGrid = n*n
-    console.log(nGrid);
-    userInput.value = "";
-    
-    createGrid(n)
-    coloring()
+    if(userInput.value > 100){
+        alert('Input value cannot more than 100!')
+    }
+    else if (userInput.value < 1){
+        alert('Input value cannot more than 100!')
+    }
+    else{
+        let n = userInput.value
+        105// remove all the grids in place of the new number of grids
+        document.querySelectorAll(".grid").forEach((elem) => elem.remove());
+        let nGrid = n*n
+        console.log(nGrid);
+        userInput.value = "";
+        
+        createGrid(n)
+        coloring()
+    }
 }
 
 function coloring() {
